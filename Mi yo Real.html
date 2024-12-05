@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Favoritos</title>
+    <style>
+        /* Reset de márgenes y paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Configuración general */
+        body {
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            background: url('https://i.pinimg.com/originals/31/5b/51/315b513ba601d52d81ad100fd701dc84.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        /* Encabezado */
+        header {
+            background: rgba(43, 33, 151, 0.7);
+            padding: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #004cff;
+        }
+
+        /* Botones de navegación */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .nav-buttons a {
+            padding: 10px 20px;
+            background-color: #1e90ff;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .nav-buttons a:hover {
+            transform: scale(1.1);
+            background-color: #005bb5;
+        }
+
+        /* Contenedor principal */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* Estilo de las columnas */
+        .column {
+            flex: 0 0 45%;
+            background: rgba(85, 24, 138, 0.526);
+            margin: 10px;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 10px rgba(94, 33, 198, 0.471);
+        }
+
+        .column h2 {
+            color: #0059ff;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .column ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .column ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .column img {
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+
+        /* Ajustes responsivos */
+        @media (max-width: 768px) {
+            .column {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mis Favoritos</h1>
+        <!-- Botones de navegación -->
+        <div class="nav-buttons">
+            <a href="index.html">Inicio</a>
+            <a href="Presentacion.html">Presentación</a>
+            <a href="Mi%20yo%20Real.html">Mi Yo Real</a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Primera columna -->
+            <div class="column">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Dibujar y pintar</li>
+                    <li>Jugar videojuegos</li>
+                    <li>Leer Comics (Obviamente)</li>
+                    <li>Escuchar música</li>
+                </ul>
+                <img src="https://i.pinimg.com/236x/89/ff/d5/89ffd50bc00eaa7a1e9fca8a24de7f20.jpg" alt="Hobbies" width="300">
+            </div>
+
+            <!-- Segunda columna -->
+            <div class="column">
+                <h2>Comics Favoritos</h2>
+                <ul>
+                    <li><em>Scarlet Witch #4</em> - Steve Orlando</li>
+                    <li><em>Absolute Power</em> - Waid y Mora</li>
+                    <li><em>Blood Hunt</em> - Jed MacKay</li>
+                    <li><em>Absolute Batman</em> - Scott Snyder</li>
+                    <li><em>Absolute Wonder Woman</em> - Kelly Thompson</li>
+                    <li><em>Absolute Superman</em> - Jason Aaron</li>
+                </ul>
+                <img src="https://i.pinimg.com/474x/9c/28/6b/9c286b2a0a6a701aeb5335cd8c00d47e.jpg" alt="Comics Favoritos" width="250">
+            </div>
+
+            <!-- Tercera columna -->
+            <div class="column">
+                <h2>Películas y Series Favoritas</h2>
+                <ul>
+                    <li><em>Avengers Endgame</em> (El origen)</li>
+                    <li><em>Eternals</em></li>
+                    <li><em>Wandavision</em></li>
+                    <li><em>Superman y Lois</em></li>
+                    <li><em>Doctor Strange In The Multiverse Of Madness</em></li>
+                    <li><em>Agatha All Along</em></li>
+                </ul>
+                <img src="https://i.pinimg.com/236x/38/62/0e/38620e325f4ce85834c4c1944b61692a.jpg" alt="Películas y Series" width="250">
+            </div>
+
+            <!-- Cuarta columna -->
+            <div class="column">
+                <h2>Comida Favorita</h2>
+                <ul>
+                    <li>Arroz con Carne Molida</li>
+                    <li>Arroz con Atún</li>
+                    <li>Arroz con Molondrones</li>
+                    <li>Lasaña</li>
+                </ul>
+                <img src="https://i.pinimg.com/236x/e7/8b/5d/e78b5df2e4eb71e01540a94bc72bd58a.jpg" alt="Comida Favorita" width="300">
+            </div>
+        </div>
+    </main>
+</body>
+</html>

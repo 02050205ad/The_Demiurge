@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién Soy?</title>
+    <style>
+        /* Reiniciar márgenes y configuraciones base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Fondo de la página */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background: url('https://i.pinimg.com/originals/f0/04/74/f00474e05be9f89250d1897210d5e3a1.gif') no-repeat center center;
+            background-size: cover;
+        }
+
+        /* Contenido principal */
+        .content {
+            text-align: center;
+            color: #ffffff;
+            padding: 20px;
+            background: rgba(7, 82, 126, 0.178); /* Fondo oscuro semitransparente */
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(10, 10, 113, 0.126);
+            max-width: 600px;
+        }
+
+        /* Estilo del título */
+        .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #008cff;
+        }
+
+        /* Estilo del texto */
+        .content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        /* Imagen decorativa */
+        .content img {
+            width: 100%;
+            max-width: 450px;
+            border-radius: 10px;
+            border: 2px solid #70c6ff;
+            box-shadow: 0px 4px 8px rgba(119, 216, 255, 0.5);
+        }
+
+        /* Botones del encabezado */
+        .header {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .header a {
+            padding: 10px 20px;
+            background-color: #0080ff;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .header a:hover {
+            transform: scale(1.1);
+            background-color: #005bb5;
+        }
+
+        /* Estilo para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 2rem;
+            }
+            .content p {
+                font-size: 1rem;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: rgba(0, 0, 0, 0.542);
+            color: rgb(61, 206, 184);
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado con botones -->
+    <header class="header">
+        <a href="Presentacion.html">Presentación</a>
+        <a href="Mi%20yo%20Real.html">Mi Yo Real</a>
+    </header>
+    
+    <!-- Contenido principal -->
+    <div class="container">
+        <div class="content">
+            <h1>Mi Página Web</h1>
+            <p>
+                ¡Bienvenidos! En esta página encontrarás información sobre mí, mis gustos y mis pasatiempos. Espero que te guste explorarla tanto como a mí me gustó crearla. Perooooo primero tienen que darle click a algunos lados del Gif para entrar a una de las tres páginas.
+            </p>
+            <!-- Image Map -->
+            <img src="https://i.pinimg.com/736x/42/92/af/4292afac73c0d0c47536bbd1c0a5aa02.jpg" usemap="#image-map">
+            <map name="image-map">
+                <area target="" alt="Presentación" title="Presentación" href="Presentacion.html" coords="24,133,130,374" shape="rect">
+                <area target="" alt="Mi Yo Real" title="Mi Yo Real" href="Mi%20yo%20Real.html" coords="314,114,423,334" shape="rect">
+            </map>
+        </div>
+    </div>
+    
+    <!-- Pie de página -->
+    <footer>
+        Luis Adrian &copy;
+    </footer>
+</body>
+</html>
